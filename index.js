@@ -56,8 +56,6 @@ bot.on('message', async (msg) => {
 
 });
 
-app.get('/', async (req,res) => {
-return res.json({'status':'OK'})})
 app.post('/web-data', async (req, res) => {
         const {queryId, products = [], totalPrice} = req.body;
     try{
